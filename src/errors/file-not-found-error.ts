@@ -10,10 +10,10 @@ export class FileNotFoundError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'Unable to find the specified file.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, FileNotFoundError);
+        Object.setPrototypeOf(this, FileNotFoundError.prototype);
     }
 }

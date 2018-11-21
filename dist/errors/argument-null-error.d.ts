@@ -9,5 +9,5 @@ export declare class ArgumentNullError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError);
+    constructor(message?: string, innerError?: Error);
 }

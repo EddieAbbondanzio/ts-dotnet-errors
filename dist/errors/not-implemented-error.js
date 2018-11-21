@@ -27,7 +27,7 @@ var NotImplementedError = /** @class */ (function (_super) {
     function NotImplementedError(message, innerError) {
         var _this = _super.call(this, message || 'The method or operation is not implemented.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, NotImplementedError);
+        Object.setPrototypeOf(_this, NotImplementedError.prototype);
         return _this;
     }
     return NotImplementedError;

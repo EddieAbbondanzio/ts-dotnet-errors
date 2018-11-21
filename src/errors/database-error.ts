@@ -9,10 +9,10 @@ export class DatabaseError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'An error occured accessing the database.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, DatabaseError);
+        Object.setPrototypeOf(this, DatabaseError.prototype);
     }
 }

@@ -10,10 +10,10 @@ export class ArithmeticError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'Overflow or underflow in the arithmetic operation.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, ArithmeticError);
+        Object.setPrototypeOf(this, ArithmeticError.prototype);
     }
 }

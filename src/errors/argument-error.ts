@@ -9,10 +9,10 @@ export class ArgumentError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'Value does not fall within the expected range.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, ArgumentError);
+        Object.setPrototypeOf(this, ArgumentError.prototype);
     }
 }

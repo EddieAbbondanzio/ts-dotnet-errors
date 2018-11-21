@@ -28,7 +28,7 @@ var OverflowError = /** @class */ (function (_super) {
     function OverflowError(message, innerError) {
         var _this = _super.call(this, message || 'Arithmetic operation resulted in an overflow.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, OverflowError);
+        Object.setPrototypeOf(_this, OverflowError.prototype);
         return _this;
     }
     return OverflowError;

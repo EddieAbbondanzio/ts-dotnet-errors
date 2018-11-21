@@ -11,5 +11,15 @@
   },
   "dependencies": {
     "typescript": "^3.1.6"
-  }
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "error",
+    "errors",
+    "exception",
+    "exceptions",
+    "c#",
+    ".NET"
+  ]
 }

@@ -9,10 +9,10 @@ export class IOError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'I/O error occured.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, IOError);
+        Object.setPrototypeOf(this, IOError.prototype);
     }
 }

@@ -28,7 +28,7 @@ var IndexOutOfRangeError = /** @class */ (function (_super) {
     function IndexOutOfRangeError(message, innerError) {
         var _this = _super.call(this, message || 'Index was outside the bounds of the array.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, IndexOutOfRangeError);
+        Object.setPrototypeOf(_this, IndexOutOfRangeError.prototype);
         return _this;
     }
     return IndexOutOfRangeError;

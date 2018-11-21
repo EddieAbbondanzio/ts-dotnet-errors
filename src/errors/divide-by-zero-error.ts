@@ -10,10 +10,10 @@ export class DivideByZeroError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'Attempted to divide by zero.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, DivideByZeroError);
+        Object.setPrototypeOf(this, DivideByZeroError.prototype);
     }
 }

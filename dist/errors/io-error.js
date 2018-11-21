@@ -27,7 +27,7 @@ var IOError = /** @class */ (function (_super) {
     function IOError(message, innerError) {
         var _this = _super.call(this, message || 'I/O error occured.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, IOError);
+        Object.setPrototypeOf(_this, IOError.prototype);
         return _this;
     }
     return IOError;

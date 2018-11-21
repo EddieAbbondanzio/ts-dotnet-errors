@@ -27,7 +27,7 @@ var ApplicationError = /** @class */ (function (_super) {
     function ApplicationError(message, innerError) {
         var _this = _super.call(this, message || 'Error occured in the application.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, ApplicationError);
+        Object.setPrototypeOf(_this, ApplicationError.prototype);
         return _this;
     }
     return ApplicationError;

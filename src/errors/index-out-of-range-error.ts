@@ -10,10 +10,10 @@ export class IndexOutOfRangeError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'Index was outside the bounds of the array.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, IndexOutOfRangeError);
+        Object.setPrototypeOf(this, IndexOutOfRangeError.prototype);
     }
 }

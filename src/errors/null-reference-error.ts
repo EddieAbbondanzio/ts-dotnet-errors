@@ -10,10 +10,10 @@ export class NullReferenceError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'Object reference not set to an instance of an object.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, NullReferenceError);
+        Object.setPrototypeOf(this, NullReferenceError.prototype);
     }
 }

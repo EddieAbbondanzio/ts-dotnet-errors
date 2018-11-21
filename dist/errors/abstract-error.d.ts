@@ -11,5 +11,5 @@ export declare abstract class AbstractError extends Error {
      * @param message The error message.
      * @param innerError The inner error.
      */
-    constructor(message?: string, innerError?: AbstractError);
+    constructor(message?: string, innerError?: Error);
 }

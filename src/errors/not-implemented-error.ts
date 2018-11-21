@@ -9,10 +9,10 @@ export class NotImplementedError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'The method or operation is not implemented.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, NotImplementedError);
+        Object.setPrototypeOf(this, NotImplementedError.prototype);
     }
 }

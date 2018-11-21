@@ -28,7 +28,7 @@ var ArgumentNullError = /** @class */ (function (_super) {
     function ArgumentNullError(message, innerError) {
         var _this = _super.call(this, message || 'Value cannot be null.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, ArgumentNullError);
+        Object.setPrototypeOf(_this, ArgumentNullError.prototype);
         return _this;
     }
     return ArgumentNullError;

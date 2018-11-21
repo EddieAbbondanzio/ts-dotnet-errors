@@ -10,10 +10,10 @@ export class DepreciatedError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'This method has been depreciated.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, DepreciatedError);
+        Object.setPrototypeOf(this, DepreciatedError.prototype);
     }
 }

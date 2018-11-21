@@ -28,7 +28,7 @@ var ArgumentOutOfRangeError = /** @class */ (function (_super) {
     function ArgumentOutOfRangeError(message, innerError) {
         var _this = _super.call(this, message || 'Specified argument was out of the range of valid values.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, ArgumentOutOfRangeError);
+        Object.setPrototypeOf(_this, ArgumentOutOfRangeError.prototype);
         return _this;
     }
     return ArgumentOutOfRangeError;

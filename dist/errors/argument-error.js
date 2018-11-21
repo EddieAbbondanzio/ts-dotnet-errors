@@ -27,7 +27,7 @@ var ArgumentError = /** @class */ (function (_super) {
     function ArgumentError(message, innerError) {
         var _this = _super.call(this, message || 'Value does not fall within the expected range.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, ArgumentError);
+        Object.setPrototypeOf(_this, ArgumentError.prototype);
         return _this;
     }
     return ArgumentError;

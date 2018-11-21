@@ -27,7 +27,7 @@ var DatabaseError = /** @class */ (function (_super) {
     function DatabaseError(message, innerError) {
         var _this = _super.call(this, message || 'An error occured accessing the database.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, DatabaseError);
+        Object.setPrototypeOf(_this, DatabaseError.prototype);
         return _this;
     }
     return DatabaseError;

@@ -27,7 +27,7 @@ var AbstractError = /** @class */ (function (_super) {
         var _this = _super.call(this, message) || this;
         _this.innerError = innerError;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, AbstractError);
+        Object.setPrototypeOf(_this, AbstractError.prototype);
         return _this;
     }
     return AbstractError;

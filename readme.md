@@ -9,7 +9,16 @@ A collection of commonly used errors from the .NET world. Enables for creating w
 
 ## How to use
 ```js
-    throw new DepreciatedError();
+throw new DepreciatedError();
+
+throw new NotImplementedError('Method Foo() has not been implemented.');
+
+try {
+    loadDatabase();
+}
+catch(error) {
+    throw new DatabaseError('Unknown error occured.', error);
+}
 ```
 
 ## Error types

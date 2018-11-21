@@ -10,10 +10,10 @@ export class ArgumentOutOfRangeError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'Specified argument was out of the range of valid values.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, ArgumentOutOfRangeError);
+        Object.setPrototypeOf(this, ArgumentOutOfRangeError.prototype);
     }
 }

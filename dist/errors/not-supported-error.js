@@ -27,7 +27,7 @@ var NotSupportedError = /** @class */ (function (_super) {
     function NotSupportedError(message, innerError) {
         var _this = _super.call(this, message || 'Specified method is not supported.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, NotSupportedError);
+        Object.setPrototypeOf(_this, NotSupportedError.prototype);
         return _this;
     }
     return NotSupportedError;

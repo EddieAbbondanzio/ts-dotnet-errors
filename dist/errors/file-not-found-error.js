@@ -28,7 +28,7 @@ var FileNotFoundError = /** @class */ (function (_super) {
     function FileNotFoundError(message, innerError) {
         var _this = _super.call(this, message || 'Unable to find the specified file.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, FileNotFoundError);
+        Object.setPrototypeOf(_this, FileNotFoundError.prototype);
         return _this;
     }
     return FileNotFoundError;

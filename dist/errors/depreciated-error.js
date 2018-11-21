@@ -28,7 +28,7 @@ var DepreciatedError = /** @class */ (function (_super) {
     function DepreciatedError(message, innerError) {
         var _this = _super.call(this, message || 'This method has been depreciated.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, DepreciatedError);
+        Object.setPrototypeOf(_this, DepreciatedError.prototype);
         return _this;
     }
     return DepreciatedError;

@@ -12,11 +12,11 @@ export abstract class AbstractError extends Error {
      * @param message The error message.
      * @param innerError The inner error.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message);
         this.innerError = innerError;
 
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, AbstractError);
+        Object.setPrototypeOf(this, AbstractError.prototype);
     }
 }

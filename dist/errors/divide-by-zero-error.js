@@ -28,7 +28,7 @@ var DivideByZeroError = /** @class */ (function (_super) {
     function DivideByZeroError(message, innerError) {
         var _this = _super.call(this, message || 'Attempted to divide by zero.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, DivideByZeroError);
+        Object.setPrototypeOf(_this, DivideByZeroError.prototype);
         return _this;
     }
     return DivideByZeroError;

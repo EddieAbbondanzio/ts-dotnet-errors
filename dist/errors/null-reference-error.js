@@ -28,7 +28,7 @@ var NullReferenceError = /** @class */ (function (_super) {
     function NullReferenceError(message, innerError) {
         var _this = _super.call(this, message || 'Object reference not set to an instance of an object.', innerError) || this;
         //For transpiling to es5 support.
-        Object.setPrototypeOf(_this, NullReferenceError);
+        Object.setPrototypeOf(_this, NullReferenceError.prototype);
         return _this;
     }
     return NullReferenceError;

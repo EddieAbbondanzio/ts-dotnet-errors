@@ -9,10 +9,10 @@ export class NotSupportedError extends AbstractError {
      * @param message The error message.
      * @param innerError The inner exception.
      */
-    constructor(message?: string, innerError?: AbstractError) {
+    constructor(message?: string, innerError?: Error) {
         super(message || 'Specified method is not supported.', innerError);
         
         //For transpiling to es5 support.
-        Object.setPrototypeOf(this, NotSupportedError);
+        Object.setPrototypeOf(this, NotSupportedError.prototype);
     }
 }
