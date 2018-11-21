@@ -5,7 +5,7 @@
   "author": "Eddie Abbondanzio",
   "license": "MIT",
   "main": "./dist/index.js",
-  "types": "/dist/index.d.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
