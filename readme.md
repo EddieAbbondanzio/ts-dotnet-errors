@@ -11,3 +11,21 @@ A collection of commonly used errors from the .NET world. Enables for creating w
 ```js
     throw new DepreciatedError();
 ```
+
+## Error types
+
+* ApplicationError
+* ArgumentError
+* ArgumentNullError
+* ArgumentOutOfRangeError
+* ArithmeticError
+* DatabaseError
+* DepreciatedError
+* DivideByZeroError
+* FileNotFoundError
+* IndexOutOfRangeError
+* IOError
+* NotImplementedError
+* NotSupportedError
+* NullReferenceError
+* OverflowError
