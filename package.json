@@ -1,6 +1,6 @@
 {
   "name": "ts-dotnet-errors",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A collection of errors to mimic commonly used ones from the .NET world. ",
   "author": "Eddie Abbondanzio",
   "license": "MIT",
