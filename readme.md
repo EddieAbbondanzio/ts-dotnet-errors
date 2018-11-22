@@ -1,6 +1,6 @@
 # ts-dotnet-errors
 
-A collection of commonly used errors from the .NET world. Enables for creating wrapped errors, and more.
+A collection of commonly used errors from the .NET world. Enables for creating wrapped errors, and more. Typescript type declarations have been pre-included for ease of use.
 
 ## Install
 ```
@@ -33,6 +33,7 @@ catch(error) {
 * DivideByZeroError
 * FileNotFoundError
 * IndexOutOfRangeError
+* InvalidOperationError
 * IOError
 * NotImplementedError
 * NotSupportedError
