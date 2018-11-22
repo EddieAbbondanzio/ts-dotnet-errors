@@ -32,3 +32,5 @@ var null_reference_error_1 = require("./errors/null-reference-error");
 exports.NullReferenceError = null_reference_error_1.NullReferenceError;
 var overflow_error_1 = require("./errors/overflow-error");
 exports.OverflowError = overflow_error_1.OverflowError;
+var invalid_operation_error_1 = require("./errors/invalid-operation-error");
+exports.InvalidOperationError = invalid_operation_error_1.InvalidOperationError;

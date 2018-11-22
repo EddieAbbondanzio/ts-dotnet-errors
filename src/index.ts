@@ -14,3 +14,4 @@ export { NotImplementedError } from "./errors/not-implemented-error";
 export { NotSupportedError } from "./errors/not-supported-error";
 export { NullReferenceError } from "./errors/null-reference-error";
 export { OverflowError } from "./errors/overflow-error";
+export { InvalidOperationError } from "./errors/invalid-operation-error";
